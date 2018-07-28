@@ -35,7 +35,7 @@ namespace Portal
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddMvc();
         }
 
@@ -66,3 +66,4 @@ namespace Portal
         }
     }
 }
+
